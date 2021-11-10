@@ -34,6 +34,7 @@ jobs:
       - name: Run formatting checks
         run: |
           cargo fmt --all -- --check
+          dprint fmt
       - name: Run linting checks
         run : |
           # do not produce debug symbols to keep memory usage down
